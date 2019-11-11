@@ -1,0 +1,66 @@
+html {
+  display: flex;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+}
+
+div.container {
+  width: 100%;
+  text-align: center;
+}
+
+#welcome {
+  display: block;
+}
+
+#welcome .box {
+  flex: 1;
+  display: inline-block;
+  line-height: 140px;
+  width: 140px;
+  height: 140px;
+  border: solid 1px black;
+  border-radius: 70px;
+  animation: rotate-anime 5s linear infinite;
+}
+
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
+#countdown img {
+  width: 92px;
+  height: 92px;
+  position: relative;
+}
+
+#countdown img.left {
+  left: -200px;
+}
+
+#countdown img.right {
+  left: 200px;
+}
+
+#countdown .box.count {
+  font-size: 24px;
+}
+
+#alert .box {
+  font-size: 72px;
+}
+
+#countdown, #alert {
+  display: none;
+}

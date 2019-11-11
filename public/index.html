@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rat Timer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;," />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://www.gstatic.com/assistant/interactivecanvas/api/interactive_canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="welcome">
+        <div class="box" data-choice="3分">3分</div>
+        <div class="box" data-choice="5分">5分</div>
+        <div class="box" data-choice="10分">10分</div>
+        <div class="box" data-choice="15分">15分</div>
+        <div class="box" data-choice="30分">30分</div>
+        <div class="box" data-choice="60分">60分</div>
+      </div>
+      <div id="countdown">
+        <div class="box">
+          <img class="left" src="images/cheese.png">
+          <img class="right" src="images/rat.png">
+        </div>
+        <div class="box count"></div>
+      </div>
+      <div id="alert">
+        <div class="box"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
